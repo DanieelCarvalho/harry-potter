@@ -24,13 +24,14 @@ useEffect(() =>{
         <S.SectionG>
                 {info.map((item, index) =>(
                 <S.Card key={index}>
-                    <div>
+                    
                     <img src={item.image || Grif } alt={item.name}/>
                     <S.CardP>
                         <p>Nome: {item.name}</p>
-                        <p>Casa:{item.house}</p>
+                        <p>Ancestralidade: {item.ancestry || '----'}</p>
+                        <p>Ano de Nascimento: {item.dateOfBirth || "----"}</p>
                     </S.CardP> 
-                </div>
+                
                 </S.Card>
             ))}
         </S.SectionG>

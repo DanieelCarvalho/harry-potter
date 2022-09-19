@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import * as S from  './Style/LufaLufaStyle'
+import Lufa from './img/lufalufa.png'
 
 
 
@@ -22,16 +24,22 @@ useEffect(() =>{
     
 });
     return(
-        <div>
+        <S. Texugo>
+        <S.SectionG>
                 {info.map((item, index) =>(
-                <figure key={index}>
-                    <p>{item.name}</p>
-                    <p>{item.house}</p>
-                <img src={item.image} alt="#"/>
-
-                </figure>
+                <S.Card key={index}>
+                    
+                    <img src={item.image || Lufa } alt={item.name}/>
+                    <S.CardP>
+                        <p>Nome: {item.name}</p>
+                        <p>Ancestralidade: {item.ancestry || '----'}</p>
+                        <p>Ano de Nascimento: {item.dateOfBirth || "----"}</p>
+                    </S.CardP> 
+                
+                </S.Card>
             ))}
-        </div>
+        </S.SectionG>
+        </S. Texugo>
     )
  }
 

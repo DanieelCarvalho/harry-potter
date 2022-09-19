@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import * as S from './Style/CorvinalStyle'
+import Corvi from './img/corvinal.png'
 
 
  function Corvinal(){
     
     const[info, setInfo] = useState([])
    
-   
+    
 useEffect(() =>{
     axios
     .get("https://hp-api.herokuapp.com/api/characters/house/Ravenclaw")
@@ -21,16 +23,22 @@ useEffect(() =>{
     
 });
     return(
-        <div>
+        <S.Corvo>
+        <S.SectionG>
                 {info.map((item, index) =>(
-                <figure key={index}>
-                    <p>{item.name}</p>
-                    <p>{item.house}</p>
-                <img src={item.image} alt={item.name}/>
-
-                </figure>
+                <S.Card key={index}>
+                    
+                    <img src={item.image || Corvi } alt={item.name}/>
+                    <S.CardP>
+                        <p>Nome: {item.name}</p>
+                        <p>Ancestralidade: {item.ancestry || '----'}</p>
+                        <p>Ano de Nascimento: {item.dateOfBirth || "----"}</p>
+                    </S.CardP> 
+                
+                </S.Card>
             ))}
-        </div>
+        </S.SectionG>
+        </S.Corvo>
     )
  }
 

@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import Sonserina from '../img/Sonserina.png'
+import styled from "styled-components"; 
+import Lufa from '../img/lufalufa.png'
 
-export const Cobra = styled.html`
-    background-image: url(${Sonserina}),  linear-gradient(to  bottom , #252525 50%, #1d7452 );
+export const  Texugo = styled.html`
+    background-image: url(${Lufa}),  linear-gradient(to  bottom , #252525 50%, #cf823c);
     background-color: black;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
-    background-size: 33%;
+    background-size: 31%;
     background-position: center ;
 
 
@@ -26,7 +26,7 @@ export const Card = styled.figure`
     align-items: top;
     width: 22vw;
     height: 65vh;
-    border: solid #dce2e2;
+    border: solid #cf823c;
     margin-top: 20px;
     border-radius: 0px 0px 31px 31px;
     color:white;
@@ -50,7 +50,7 @@ img{
     width: 100%;
     color: white;
     border: solid;
-    background-color:#43484c;
+    background-color:#373737;
     border-radius: 0px 0px 33px 33px;
     border: none;
     

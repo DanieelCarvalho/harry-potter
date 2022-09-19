@@ -21,7 +21,7 @@ function Header(){
                 
             <S.Ul>
                 <li>
-                    <S.Menu to='/'>Home</S.Menu>
+                    <S.Menu to='/'>Início</S.Menu>
                 </li>
                 <li>
                     <S.Menu to='/Grifinória'>Grifinória</S.Menu>
@@ -57,7 +57,7 @@ function Header(){
         <S.Nav>
             <S.Ul>
                 <li>
-                    <S.Menu to='/'>Home</S.Menu>
+                    <S.Menu to='/'>Início</S.Menu>
                 </li>
                 <li>
                     <S.Menu to='/Grifinória'>Grifinória</S.Menu>
