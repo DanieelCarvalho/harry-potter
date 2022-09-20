@@ -71,7 +71,9 @@ function Header(){
                 <li>
                     <S.Menu to='/LufaLufa/'>Lufa-Lufa</S.Menu>
                 </li>
+                
             </S.Ul>
+          
 
 
         </S.Nav>
