@@ -18,7 +18,6 @@ function Header(){
     const Modal = () =>{
         return(
             <nav>
-                
             <S.Ul>
                 <li>
                     <S.Menu to='/'>Início</S.Menu>
@@ -50,8 +49,9 @@ function Header(){
             }}>
            {open ===true ? <S.Foto src={foto2} alt="oi" /> :  <S.Foto src={foto1} alt="X"/>}
         </button>
-        <p>ola</p>
+       
         {open && Modal()}
+      
         </S.Modal>
 
         <S.Nav>
