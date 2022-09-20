@@ -9,7 +9,7 @@ function Grifinória() {
 
   useEffect(() => {
     axios
-      .get("http://hp-api.herokuapp.com/api/characters/house/gryffindor")
+      .get("https://hp-api.herokuapp.com/api/characters/house/gryffindor")
       .then((resposta) => {
         setInfo(resposta.data);
       })
