@@ -57,7 +57,6 @@ display: none;
 @media (max-width:500px){
     display:block;
     flex-direction:column;
-    border:solid red;
     background-color: #252525;
   }
   button{
