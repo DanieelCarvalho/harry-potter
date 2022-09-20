@@ -48,6 +48,7 @@ export const Ul = styled.ul`
         height: 30vh;
         font-size: 4vw;
         background-color: #252525;
+       
     }
     
 
@@ -58,6 +59,8 @@ display: none;
     display:block;
     flex-direction:column;
     background-color: #252525;
+    position: absolute;
+    margin-top: 10px;
   }
   button{
     display:flex;
@@ -67,6 +70,7 @@ display: none;
     background-color:#252525;
     color: white;
     border: none;
+   
   }
 
 `

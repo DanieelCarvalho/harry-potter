@@ -22,7 +22,11 @@ export const SectionG = styled.div`
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
     background-size: 30%;
-    background-position: center ;
+    background-position: center;
+    @media (max-width:500px){
+     flex-direction: column;
+     align-items: center;
+    }
     
    
 
@@ -47,7 +51,10 @@ img{
     background-color: black;
    // border-radius:0px 0px 40px 40px; ;
 
-}
+}@media (max-width:500px){
+    width: 60vw;
+    
+    }
 
 `
  export const CardP= styled.div`
@@ -67,7 +74,16 @@ img{
     p{
         width: 20vw;
        
+    }  @media (max-width:500px){
+        height: 30%;
+        p{
+        font-size: 3.5vw;
+        width: 100%;
+        padding-left: 10px;
     }
+    }
+ 
+    
  `
   export const Input = styled.div`
    
@@ -83,8 +99,8 @@ input{
   border: none;
   border-radius: 5px;
   margin-right: 10px;
+  @media (max-width:500px){
+    width: 50vw;
+    }
 }
-     
-
-
 `
