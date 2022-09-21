@@ -35,10 +35,9 @@ function Header(){
                     <S.Menu to='/LufaLufa/'>Lufa-Lufa</S.Menu>
                 </li>
             </S.Ul>
-
-
         </nav>
         )
+        
     };
  
     return(       
