@@ -5,10 +5,10 @@ import Grifinória from './Grifinória';
 import Sonserina from './Sonserina';
 import Corvinal from './Corvinal';
 import LufaLufa from './LufaLufa';
-import foto1 from './img/menubranco.png'
-import foto2 from './img/xbranco.png'
+import foto1 from '../img/menubranco.png'
+import foto2 from '../img/xbranco.png'
 
-import * as S from './Style/HeaderStyle'
+import * as S from '../Style/HeaderStyle'
 import axios from 'axios'
 
 

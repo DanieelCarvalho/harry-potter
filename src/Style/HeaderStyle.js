@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom"
 import Casas from '../img/casasharry.png'
-
+ 
 
 export const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,500;0,600;1,100;1,500&family=Mukta:wght@200;400;800&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&display=swap');

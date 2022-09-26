@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import * as S from "./Style/SonserinaStyle";
-import Sonse from "./img/Sonserina.png";
+import * as S from "../Style/SonserinaStyle";
+import Sonse from "../img/Sonserina.png";
 
 function Sonserina() {
   const [info, setInfo] = useState([]);

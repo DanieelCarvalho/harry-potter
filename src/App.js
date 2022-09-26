@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Components/Header'
-import { GlobalStyle } from './Components/Style/HeaderStyle'
+import { GlobalStyle } from './Style/HeaderStyle'
 
 function App(){
 

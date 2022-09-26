@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import * as S from "./Style/LufaLufaStyle";
-import Lufa from "./img/lufalufa.png";
+import * as S from "../Style/LufaLufaStyle";
+import Lufa from "../img/lufalufa.png";
 
 function LufaLufa() {
   const [info, setInfo] = useState([]);

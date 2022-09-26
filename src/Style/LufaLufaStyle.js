@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import Sonserina from '../img/Sonserina.png'
+import styled from "styled-components"; 
+import Lufa from '../img/lufalufa.png'
 
-export const Cobra = styled.html`
-    width: 100%;   
+export const  Texugo = styled.html`
+     width: 100%;   
     height: 89.8vh;
-    background-image: url(${Sonserina}), linear-gradient(to  bottom , #252525 50%, #1d7452   );
+    background-image: url(${Lufa}), linear-gradient(to  bottom , #252525 50%, #cf823c);
     background-color: black;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -17,12 +17,12 @@ export const SectionG = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 20px;
-    background-image: url(${Sonserina}), linear-gradient(to  bottom , #252525 50%, #1d7452   );
+    background-image: url(${Lufa}), linear-gradient(to  bottom , #252525 50%, #cf823c);
     background-color: black;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
     background-size: 30%;
-    background-position: center ; 
+    background-position: center;
     @media (max-width:500px){
      flex-direction: column;
      align-items: center;
@@ -31,16 +31,14 @@ export const SectionG = styled.div`
    
 
 `
-
  
 export const Card = styled.figure`
     display: flex;
     flex-direction: column;
-    justify-content: ;
     align-items: top;
     width: 22vw;
     height: 65vh;
-    border: solid #dce2e2;
+    border: solid #cf823c;
     margin-top: 20px;
     border-radius: 0px 0px 31px 31px;
     color:white;
@@ -52,12 +50,10 @@ img{
     background-color: black;
    // border-radius:0px 0px 40px 40px; ;
 
-}
-@media (max-width:500px){
+}@media (max-width:500px){
     width: 60vw;
     
     }
-
 
 `
  export const CardP= styled.div`
@@ -69,7 +65,7 @@ img{
     width: 100%;
     color: white;
     border: solid;
-    background-color:#43484c;
+    background-color:#373737;
     border-radius: 0px 0px 33px 33px;
     border: none;
     
@@ -77,8 +73,7 @@ img{
     p{
         width: 20vw;
        
-    }
-    @media (max-width:500px){
+    }  @media (max-width:500px){
         height: 30%;
         p{
         font-size: 3.5vw;
@@ -86,26 +81,25 @@ img{
         padding-left: 10px;
     }
     }
+ 
+    
  `
- export const Input = styled.div`
+  export const Input = styled.div`
    
- display: flex;
- justify-content: flex-end;
- align-items: flex-end;
- width: 100%;
- height: 9vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 9vh;
 
 input{
- width: 20vw;
- height: 5vh;
- border: none;
- border-radius: 5px;
- margin-right: 10px;
- @media (max-width:500px){
+  width: 20vw;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  @media (max-width:500px){
     width: 50vw;
     }
 }
-    
-
-
 `

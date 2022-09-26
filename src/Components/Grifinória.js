@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import * as S from "./Style/CorvinalStyle";
-import Corvi from "./img/corvinal.png";
+import Carousel from 'nuka-carousel';
+import * as S from "../Style/GrifinoriaStyle";
+import Grif from "../img/grifinoria.png";
 
-function Corvinal() {
+function Grifinória() {
   const [info, setInfo] = useState([]);
   const [busca, setBusca] = useState("");
 
   useEffect(() => {
     axios
-      .get("https://hp-api.herokuapp.com/api/characters/house/Ravenclaw")
+      .get("https://hp-api.herokuapp.com/api/characters/house/gryffindor")
       .then((resposta) => {
         setInfo(resposta.data);
       })
+
       .catch((error) => {
         console.log("Deu ruim", error);
       });
@@ -29,7 +31,7 @@ function Corvinal() {
   });
 
   return (
-    <S.Corvo>
+    <S.Leao>
       <S.Input>
         <input
           type="search"
@@ -40,19 +42,28 @@ function Corvinal() {
           }}
         />
       </S.Input>
+      
       <S.SectionG>
+    
         {Lista.map((item, index) => (
+          
           <S.Card key={index}>
-            <img src={item.image || Corvi} alt={item.name} />
+           
+            <img src={item.image || Grif} alt={item.name} />
+            
             <S.CardP>
               <p>Nome: {item.name}</p>
               <p>Ancestralidade: {item.ancestry || "----"}</p>
               <p>Ano de Nascimento: {item.dateOfBirth || "----"}</p>
             </S.CardP>
           </S.Card>
+         
         ))}
+       
       </S.SectionG>
-    </S.Corvo>
+       
+    </S.Leao>
   );
 }
-export default Corvinal;
+
+export default Grifinória;

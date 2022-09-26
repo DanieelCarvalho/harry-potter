@@ -1,5 +1,5 @@
 import React from "react";
-import {Content, Titulo, GlobalStyle} from './Style/HomeStyle'
+import {Content, Titulo, GlobalStyle} from '../Style/HomeStyle'
 
 
 
