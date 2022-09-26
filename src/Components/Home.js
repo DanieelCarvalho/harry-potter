@@ -11,7 +11,7 @@ function Home(){
         <Content >
             <GlobalStyle/>
             
-            <Titulo>Descubra Qual Casa Seu  Personagens Favorito de Harry Potter Faz Parte</Titulo>
+            <Titulo>Descubra De Qual Casa Seu Personagens Favorito de Harry Potter Faz Parte</Titulo>
             
             
         </Content >

@@ -5,12 +5,7 @@ import { Link } from "react-router-dom"
 
  
 export const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,500;0,600;1,100;1,500&family=Mukta:wght@200;400;800&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,500;0,600;1,100;1,500&family=Mukta:wght@200;400;800&family=Open+Sans:wght@300&family=Playfair+Display:wght@700&display=swap');
-    
-     @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
-                
     *{
         margin:0;
         padding:0;
@@ -31,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
       background-size: 30%;
       background-position: center;
       width: 100%;
-      height: 90vh;
+      height: 590px;
       background-color:#252525;
       display: flex;
       justify-content: right;
