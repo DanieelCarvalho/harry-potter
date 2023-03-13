@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import * as S from "../Style/CorvinalStyle";
-import Corvi from "../img/corvinal.png";
+import * as S from "./style";
+import Sonse from "../../img/Sonserina.png";
 
-function Corvinal() {
+function Sonserina() {
   const [info, setInfo] = useState([]);
   const [busca, setBusca] = useState("");
 
   useEffect(() => {
     axios
-      .get("https://hp-api.herokuapp.com/api/characters/house/Ravenclaw")
+      .get("https://hp-api.onrender.com/api/characters/house/slytherin")
       .then((resposta) => {
         setInfo(resposta.data);
       })
@@ -29,7 +29,7 @@ function Corvinal() {
   });
 
   return (
-    <S.Corvo>
+    <S.Cobra>
       <S.Input>
         <input
           type="search"
@@ -43,7 +43,7 @@ function Corvinal() {
       <S.SectionG>
         {Lista.map((item, index) => (
           <S.Card key={index}>
-            <img src={item.image || Corvi} alt={item.name} />
+            <img src={item.image || Sonserina} alt={item.name} />
             <S.CardP>
               <p>Nome: {item.name}</p>
               <p>Ancestralidade: {item.ancestry || "----"}</p>
@@ -52,7 +52,7 @@ function Corvinal() {
           </S.Card>
         ))}
       </S.SectionG>
-    </S.Corvo>
+    </S.Cobra>
   );
 }
-export default Corvinal;
+export default Sonserina;

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import * as S from "../Style/SonserinaStyle";
-import Sonse from "../img/Sonserina.png";
+import * as S from "./style";
+import Lufa from "../../img/lufalufa.png";
 
-function Sonserina() {
+function LufaLufa() {
   const [info, setInfo] = useState([]);
   const [busca, setBusca] = useState("");
 
   useEffect(() => {
     axios
-      .get("https://hp-api.herokuapp.com/api/characters/house/slytherin")
+      .get("https://hp-api.onrender.com/api/characters/house/Hufflepuff")
       .then((resposta) => {
         setInfo(resposta.data);
       })
@@ -29,7 +29,7 @@ function Sonserina() {
   });
 
   return (
-    <S.Cobra>
+    <S.Texugo>
       <S.Input>
         <input
           type="search"
@@ -43,7 +43,7 @@ function Sonserina() {
       <S.SectionG>
         {Lista.map((item, index) => (
           <S.Card key={index}>
-            <img src={item.image || Sonserina} alt={item.name} />
+            <img src={item.image || Lufa} alt={item.name} />
             <S.CardP>
               <p>Nome: {item.name}</p>
               <p>Ancestralidade: {item.ancestry || "----"}</p>
@@ -52,7 +52,7 @@ function Sonserina() {
           </S.Card>
         ))}
       </S.SectionG>
-    </S.Cobra>
+    </S.Texugo>
   );
 }
-export default Sonserina;
+export default LufaLufa;
